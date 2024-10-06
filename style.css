@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #f8f8f8;
     color: #333;
+    line-height: 1.6; /* Mejora la legibilidad */
 }
 
 .container {
@@ -12,31 +13,43 @@ body {
 }
 
 header {
-    background-color: #f08080; /* Color de fondo llamativo */
+    background-color: #f08080; 
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    border-bottom: 5px solid #e8491d; /* Añade un borde llamativo */
 }
 
 h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
+    font-size: 2.5em; /* Aumenta el tamaño del título */
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 .receta {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
     display: flex;
     align-items: flex-start;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.receta:hover {
+    transform: translateY(-5px); /* Efecto hover sutil */
 }
 
 .receta img {
-    width: 200px;
+    width: 250px; /* Imágenes un poco más grandes */
     height: auto;
-    margin-right: 20px;
+    margin-right: 30px;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra a la imagen */
 }
 
 .info-receta {
@@ -44,22 +57,29 @@ h1 {
 }
 
 h2 {
-    color: #f08080; /* Color de encabezado llamativo */
+    color: #e8491d; /* Color de encabezado más llamativo */
+    margin-bottom: 10px;
 }
 
 .autor {
     font-style: italic;
     color: #666;
+    margin-bottom: 15px;
 }
 
 ul, ol {
     padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin-top: 30px;
 }
